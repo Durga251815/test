@@ -21,3 +21,4 @@ print(df.isnull().sum())
 
 print("\nSummary Statistics:")
 print(df.describe())
+df.groupby("smoker")["charges"].mean()
